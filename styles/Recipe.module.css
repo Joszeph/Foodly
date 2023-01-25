@@ -1,0 +1,157 @@
+.modalWrapper{
+    width: 1060px;
+    height: 1017px;
+    margin: 0 auto;
+}
+
+.modalContainer{
+    max-width: 1060px;
+    height: 1017px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin: 63px auto 0 auto;
+}
+
+.titleImg{
+    display: flex;
+    gap:39.5px
+}
+
+.img{
+    filter: drop-shadow(0px 6.77952px 20.3386px rgba(0, 0, 0, 0.1));
+    border-radius: 20.3386px;
+    position: relative;
+    top: -37px;
+    left: -50.86px;
+}
+
+.title h1{
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 73px;
+    letter-spacing: 0em;
+    text-align: left;
+    text-transform: uppercase;
+    width: 460px;
+    margin-top: 70px;
+}
+
+.btnVideo{
+    height: 60px;
+    width: 222px;
+    left: 968px;
+    top: 383px;
+    border-radius: 30px;
+    padding: 20px 38px 20px 38px;
+    background-color: #FAC234;
+    color: white;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btnVideo img{
+    margin-left: -17px;
+}
+
+.btnVideo span{
+    margin-left: 13.5px;
+}
+
+.modalContent{
+    display: flex;
+    justify-content: space-around;
+}
+
+.left h5{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.right{
+    flex-basis: 50%;
+}
+
+.right h5{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.right p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333;
+    margin-bottom: 58px;
+}
+
+.tags{
+    display: flex;
+}
+
+.tag{
+    width: 68px;
+    height: 28px;
+    border-radius: 30px;
+    border: 2px solid #EB6237;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+}
+
+.tag span{
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 24px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #EB6237;
+}
+
+@media only screen and (max-width: 1536px) {
+
+
+    .modalContent{
+        margin-top: -18px;
+    }
+    
+    .left h5 {
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 20px;
+        text-transform: uppercase;
+        margin-bottom: 5px;
+    }
+
+    .right p{
+        font-size: 12px;
+        line-height: 24px;
+        color: #333333;
+        margin-bottom: 14px;
+    }
+
+    .right h5 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        text-transform: uppercase;
+        color: #000000;
+        margin-bottom: 5px;
+    }
+
+}
