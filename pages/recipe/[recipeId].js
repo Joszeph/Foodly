@@ -1,5 +1,4 @@
 import { useRouter } from "next/router";
-
 import Modal from "react-modal";
 import RecipeDetails from "../../components/RecipeDetails";
 
