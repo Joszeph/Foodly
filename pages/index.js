@@ -15,6 +15,7 @@ import { NoResults } from "../components/NoResults";
 export default function Home() {
   const [search, setSearch] = useState("");
   const [filteredSeaFood, setFilteredSeaFood] = useState(seaFood);
+  const [filteredItalianFood, setFilteredItalianFood] = useState(italianFood);
   const [isLoading, setIsLoading] = useState(false)
   const [showH2, setShowH2] = useState(true);
   const debouncedSearch = _.debounce((val) => setSearch(val), 1000);
@@ -22,7 +23,14 @@ export default function Home() {
   useEffect(() => {
     setIsLoading(true);
     setShowH2(false);
-    const filteredData = seaFood.filter((val) => {
+    const filteredSeaFoodData = seaFood.filter((val) => {
+      if (search === "") {
+        return val;
+      } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
+        return val;
+      }
+    });
+    const filteredItalianFoodData = italianFood.filter((val) => {
       if (search === "") {
         return val;
       } else if (val.title.toLowerCase().includes(search.toLowerCase())) {
@@ -30,7 +38,8 @@ export default function Home() {
       }
     });
     setTimeout(() => {
-      setFilteredSeaFood(filteredData);
+      setFilteredSeaFood(filteredSeaFoodData);
+      setFilteredItalianFood(filteredItalianFoodData);
       setIsLoading(false);
       setShowH2(true);
     }, 1000);
@@ -66,7 +75,7 @@ export default function Home() {
                 </section>
                 <h2>🍝 MAYBE some italian?</h2>
                 <section className={styles.cardsWrapperTwo}>
-                  {italianFood.map((food) => (
+                  {filteredItalianFood.map((food) => (
                     <Card food={food} key={food.id} />
                   ))}
                 </section>
@@ -74,7 +83,7 @@ export default function Home() {
             ) : null}
           </>
         ) : (
-          <NoResults />
+          <NoResults search={search}/>
         )}
       </main>
     </>

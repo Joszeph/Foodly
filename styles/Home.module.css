@@ -35,7 +35,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    margin-top:80 px;
+    margin-top:80px;
 }
 
 .mainContainer h2:last-of-type{
@@ -49,4 +49,8 @@
     display: flex;
     justify-content: center;
     gap: 20px;
+}
+
+.cardsWrapperTwo{
+    margin-bottom: 99px;
 }

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link"
 import styles from "../styles/Header.module.css";
 
 const Header = () => {
@@ -11,7 +12,6 @@ const Header = () => {
         width={388.39}
         height={265}
       />
-    
     </header>
   );
 };
