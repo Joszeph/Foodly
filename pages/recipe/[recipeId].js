@@ -7,36 +7,30 @@ import styles from "../../styles/Recipe.module.css";
 
 import { seaFood } from "../../db/seafood";
 
-export async function getStaticPaths() {
-  const paths = Object.keys(seaFood).map((id) => ({
-    params: { recipeId: id },
-  }));
-  return {
-    paths,
-    fallback: false,
-  };
-}
+// export async function getStaticPaths() {
+//   const paths = Object.keys(seaFood).map((id) => ({
+//     params: { recipeId: id },
+//   }));
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
 
-export async function getStaticProps({ params }) {
-  const recipe = seaFood[params.recipeId];
+// export async function getStaticProps({ params }) {
+//   const recipe = seaFood[params.recipeId];
 
-  return {
-    props: { recipe },
-  };
-}
+//   return {
+//     props: { recipe },
+//   };
+// }
 
-const Recipe = ({ recipe }) => {
+const Recipe = () => {
   const router = useRouter();
+  const {recipeId} = router.query
 
   return (
-    <Modal
-      className={styles.modalWrapper}
-      isOpen={true}
-      onRequestClose={() => router.push("/")}
-      contentLabel="Recipe modal"
-    >
-      <RecipeDetails recipe={recipe} />
-    </Modal>
+      <RecipeDetails recipeId={recipeId} />
   );
 };
 
