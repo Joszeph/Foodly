@@ -9,24 +9,6 @@
 }
 
 .logo{
-    margin-top: 71px;  
+    margin-top: 16px;  
 }
 
-.search{
-    background-color: white;
-    border: none;
-    border-radius: 60px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-    width: 940px;
-    height: 82px;
-    position: relative;
-    top:40px;
-}
-
-.searchIcon{
-    position: relative;
-    left: 52px;
-    top: 45px;
-    z-index: 1;
-    font-size: 24px;
-}

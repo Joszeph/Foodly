@@ -1,0 +1,42 @@
+.loader{
+    max-width: 940px;
+    height: 213px;
+    background: #FFFFFF;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.image{
+    margin-top: 30px;
+}
+
+.loader p{
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #000000;
+}
+
+.loaderP{
+    margin: 0px 0 -37px 0;
+    padding: 60px;
+}
+
+.loader button{
+    margin: 0 auto;
+    width: 173px;
+    height: 60px;
+    background: #FAC234;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+}

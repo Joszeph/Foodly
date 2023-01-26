@@ -1,3 +1,31 @@
+.inputEl{
+    position: relative;
+    top: -41px;
+    display: flex;
+    justify-content: center;
+}
+
+.search{
+    background-color: white;
+    border: none;
+    border-radius: 60px;
+    box-shadow: 0px 10px 30px rgb(0 0 0 / 10%);
+    width: 940px;
+    height: 82px;
+    padding-left: 60px;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.searchIcon{
+    position: relative;
+    left: 47px;
+    top: 30px;
+    z-index: 1;
+    font-size: 24px;
+}
+
+
 .mainContainer h2{
     font-family: 'Montserrat';
     font-style: normal;
@@ -7,7 +35,7 @@
     text-align: center;
     text-transform: uppercase;
     color: #000000;
-    margin-top:161px;
+    margin-top:80 px;
 }
 
 .mainContainer h2:last-of-type{
